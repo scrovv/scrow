@@ -15,3 +15,7 @@ To build apps, you can use the following commands:
 - For the main project: Run the command specified in the README.md for your specific use case (`make build` `python setup.py` `npm run`)
 
 Please note that you may need to install additional dependencies before running these commands.
+
+|Workspace||Pipeline|
+| :- | - | -: |
+|Setup||chmod +x setup.sh && ./setup.sh|
