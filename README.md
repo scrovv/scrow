@@ -7,11 +7,11 @@ This is a project description.
 To get started with this project, run `python show_greeting.py <name>` in your terminal.
 For auto-docker setup, navigate to ./ghost/apps/auto-docker and follow the instructions.
 
-## Building Both Apps
+## Building Apps
 
-To build both apps, you can use the following commands:
+To build apps, you can use the following commands:
 
-- For the greeting app: `python show_greeting.py <name>`
-- For the main project: Run the command specified in the README.md for your specific use case (e.g., `python main.py`)
+- Getting started: `cd ghost/scripts && chmod +x script.sh` `./script.sh`
+- For the main project: Run the command specified in the README.md for your specific use case (`make build` `python setup.py` `npm run`)
 
 Please note that you may need to install additional dependencies before running these commands.
