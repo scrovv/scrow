@@ -20,3 +20,9 @@ sphinx-apidoc -o docs source/
 
 # Format docstrings using autopep8
 find docs/source -name "*.py" -exec python -m autopep8 {} \;
+
+# Create index.html file for the generated documentation
+mkdir -p docs/_build
+cp -r docs/_static docs/_build/
+cp -r docs/_images docs/_build/
+cp -r docs/_sphinx docs/_build/
