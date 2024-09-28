@@ -24,4 +24,4 @@ The following pipelines can be used to automate workspace execution:
 | **dev**: Development pipeline for local development | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. 5. Run `npm run` to start the application. |
 | **setup**: Setup pipeline for initial repository configuration | 1. Run `cd ghost/scripts && chmod +x setup_docs.sh` `./setup_docs.sh` in your terminal. 2. Navigate to ./ghost/docs and run `make build` to generate documentation. |
 
-setup.sh
+**script.sh**
