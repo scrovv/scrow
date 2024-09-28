@@ -1,0 +1,5 @@
+    This command will build the Playground frontend and backend, and upload them to Google Container Registry (GCR).
+
+4.  Deploy the Playground to your local environment:
+    ```bash
+gcloud container deploy playground --image=gcr.io/beam-playground --platform=managed --region=europe-west1

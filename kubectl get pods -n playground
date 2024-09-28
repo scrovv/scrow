@@ -1,0 +1,8 @@
+    These commands will verify that the Playground is running correctly and deploy the necessary containers.
+
+**Example Use Cases**
+
+*   To run the Playground in a local environment, use the following command:
+    ```bash
+gcloud container clusters get-credentials --zone=europe-west1-b --cluster=beam-playground
+kubectl apply -f playground/deploy.yaml
