@@ -1,0 +1,13 @@
+# Ghost configuration file
+
+# General settings
+title = "My Blog"
+url = "https://myblog.com"
+
+# Database settings
+database = "mysql"
+username = "root"
+password = "password"
+
+# Server settings
+port = 2368
