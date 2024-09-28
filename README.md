@@ -28,4 +28,11 @@ Please note that you may need to install additional dependencies before running 
 
 |Workspace||Pipeline|
 | :- | - | -: |
-|Setup||chmod +x setup.sh && ./setup.sh|```
+|Setup||chmod +x setup.sh && ./setup.sh|
+
+### Assistant:
+Ok, any changes I propose will be to those files.
+
+### User:
+I added these files to the chat: ghost/scripts/script.sh
+Let me know if there are others we should add.
