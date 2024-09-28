@@ -1,0 +1,10 @@
+; Auto-github commit and sync from VS Code
+; Save the commit text before pushing
+; Press Ctrl+Shift+C to start
+; Press Enter to save and push
+
+Send, ^C
+Send, . 
+Send, {Enter}
+Send, ^X^V 
+Send, {Enter}
