@@ -21,18 +21,7 @@ The following pipelines can be used to automate workspace execution:
 | Pipeline | Description |
 | --- | --- |
 | **e2e**: End-to-end pipeline for testing and validation | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. 5. Run `npm run` to start the application. |
-| **dev**: Development pipeline for local development | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. |
-| **prod**: Production pipeline for deployment | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. |
+| **dev**: Development pipeline for local development | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. 5. Run `npm run` to start the application. |
+| **setup**: Setup pipeline for initial repository configuration | 1. Run `cd ghost/scripts && chmod +x setup_docs.sh` `./setup_docs.sh` in your terminal. 2. Navigate to ./ghost/docs and run `make build` to generate documentation. |
 
-Please note that you may need to install additional dependencies before running these commands.
-
-|Workspace||Pipeline|
-| :- | - | -: |
-|Setup||chmod +x setup.sh && ./setup.sh|
-
-### Assistant:
-Ok, any changes I propose will be to those files.
-
-### User:
-I added these files to the chat: ghost/scripts/script.sh
-Let me know if there are others we should add.
+setup.sh
