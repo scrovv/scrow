@@ -15,3 +15,6 @@ mkdir -p doc/api
 
 # Initialize a new Markdown file for API documentation (assuming you have an API)
 echo "API Documentation" > doc/api/index.md
+
+# Create a CNAME file to link to the project homepage
+echo "your-project-website.com" > doc/CNAME
