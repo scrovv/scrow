@@ -3,8 +3,8 @@
 # Initialize documentation directory if it doesn't exist
 mkdir -p docs
 
-# Install required dependencies for documentation generation (e.g., Sphinx)
-pip install sphinx sphinx-autodoc-typehints
+# Install required dependencies for Sphinx and autopep8 (assuming you want to format your docstrings)
+pip install sphinx sphinx-autodoc-typehints autopep8
 
 # Set repository name variable
 REPO_NAME="My Repository"
@@ -17,3 +17,6 @@ echo "Initial commit" >> docs/changelog.md
 
 # Generate documentation using Sphinx (assuming you're using a Markdown-based theme)
 sphinx-apidoc -o docs source/
+
+# Format docstrings using autopep8
+find docs/source -name "*.py" -exec python -m autopep8 {} \;
