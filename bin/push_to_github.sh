@@ -2,13 +2,13 @@
 #!/bin/bash
 
 # Load configuration
-source /path/to/your/full-one-drive-git-auto-push/config.sh
+source /path/to/your/git-auto-push/config.sh
 
 # Navigate to the project directory
 cd "$PROJECT_DIR"
 
 # Log file
-LOG_FILE="/path/to/your/full-one-drive-git-auto-push/logs/push.log"
+LOG_FILE="/path/to/your/git-auto-push/logs/push.log"
 
 # Make sure the directory exists
 if [ $? -ne 0 ]; then
