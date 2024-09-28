@@ -26,3 +26,7 @@ mkdir -p docs/_build
 cp -r docs/_static docs/_build/
 cp -r docs/_images docs/_build/
 cp -r docs/_sphinx docs/_build/
+
+# Add a script to run the Sphinx documentation server
+echo "Starting Sphinx documentation server..."
+python -m sphinx_autodoc_typehints serve --no-build docs/_build
