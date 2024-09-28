@@ -1,0 +1,23 @@
+version: '3'
+services:
+  cypress:
+    build: .
+    environment:
+      - CYPRUS_ENV=ci
+    ports:
+      - "3000:3000"
+    depends_on:
+      - python
+    restart: always
+
+  python:
+    build: .
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - .:/app
+    command: python -m venv /app/venv && source /app/venv/bin/activate && pip install --no-cache-dir -r requirements.txt
+
+volumes:
+  requirements:
