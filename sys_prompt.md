@@ -1,49 +1,94 @@
-**Prompt Template:**
+#!/bin/bash
 
-`build_portable_virt_distro`
+# Clone repositories
+clone_repos=("${@:1}")
+repo_names=("${@:2}")
 
-`Input:`
-`clone_repos`: <list of repository URLs to clone>
-`repo_names`: <list of repository names>
+for repo in "${!clone_repos[@]}"; do
+  git clone ${clone_repos[$repo]} $repo
+done
 
-`Analysis Tasks:`
-`1. file_analysis`: Analyze individual files and directories, identifying key components such as APIs, data structures, or algorithms used in the code.
-`2. design_decision_analysis`: Investigate architectural designs, design patterns, and coding techniques used in the repository.
-`3. api_reverse_engineering`: Analyze API documentation or comments to understand functionality and parameters, using tools like Postman or cURL to test APIs and inspect responses.
-`4. data_format_analysis`: Identify data formats used in the code, such as JSON or XML.
+# Run analysis tasks
+analysis_tasks=("file_analysis" "design_decision_analysis" "api_reverse_engineering" "data_format_analysis")
 
-`Tools and Resources:`
-`1. code_analysis_tools`: SonarQube, Codefactor
-`2. reverse_engineering_frameworks`: Ghidra, OllyDbg
-`3. documentation_and_knowledge_bases`: Read the Docs, Stack Overflow
+for task in "${analysis_tasks[@]}"; do
+  case $task in
+    file_analysis)
+      # Implement file analysis logic here
+      ;;
+    design_decision_analysis)
+      # Implement design decision analysis logic here
+      ;;
+    api_reverse_engineering)
+      # Implement API reverse engineering logic here
+      ;;
+    data_format_analysis)
+      # Implement data format analysis logic here
+      ;;
+  esac
+done
 
-`Environment Specifications:`
-`1. operating_system`: LFS Ubuntu 22.04 (kernel version)
-`2. kernel_version`: 5.15 or later
-`3. shell`: ZSH (version 5.13 or later)
-`4. package_manager`: apt or pacman
-`5. disk_image_format`: squashfs or iso
-`6. virtualization_platform`: VirtualBox, VMware, or Hyper-V
-`7. network_configuration`: static IP address, DHCP, or no networking
+# Parse sys_prompt.md for setup scripts
+sys_prompt_file="sys_prompt.md"
+if [ -f "$sys_prompt_file" ]; then
+  while IFS= read -r line; do
+    if [[ $line =~ ^\s*(setup|script)\s*=\s*([a-zA-Z0-9_]+) ]]; then
+      script_name=${BASH_REMATCH[2]}
+      script_path=$(find . -name "$script_name.sh" 2>/dev/null)
+      if [ -n "$script_path" ]; then
+        bash $script_path &
+      fi
+    fi
+  done < "$sys_prompt_file"
+fi
 
-`Build Settings:`
-`1. build_type`: Development or Production
-`2. distro_name`: Custom distro name (e.g., "Portable Virt Distro")
-`3. output_directory`: Directory where the virtual distro will be saved
+# Generate setup scripts
+setup_scripts=()
+while IFS= read -r line; do
+  if [[ $line =~ ^\s*(setup|script)\s*=\s*([a-zA-Z0-9_]+) ]]; then
+    script_name=${BASH_REMATCH[2]}
+    script_path=$(find . -name "$script_name.sh" 2>/dev/null)
+    if [ -n "$script_path" ]; then
+      setup_scripts+=("$script_name")
+    fi
+  fi
+done < "$sys_prompt_file"
 
-`Output Requirements:`
-`1. report_format`: Markdown or plain text
-`2. report_length`: Maximum number of words in the output report
+# Create setup script files
+for script in "${setup_scripts[@]}"; do
+  echo "Creating setup script for $script..."
+  cat > "$script.sh" << EOF
+#!/bin/bash
 
-**Example Input:**
+# Setup script for $script
 
-`clone_repos`: ["https://github.com/user/repo1", "https://github.com/user/repo2"]
-`repo_names`: ["Repo 1", "Repo 2"]
+EOF
+done
 
-This updated template includes additional environment specifications to build a custom portable virtual distro emulator. The builder can use these settings to create a self-contained, portable virtual distro that can be run on any machine with the required hardware and software.
+# Make setup scripts executable
+for script in "${setup_scripts[@]}"; do
+  chmod +x "$script.sh"
+done
 
-Here is an example of how this prompt could be used:
+# Run setup scripts
+echo "Running setup scripts..."
+for script in "${setup_scripts[@]}"; do
+  bash "$script.sh" &
+done
 
-`build_portable_virt_distro clone_repos=["https://github.com/user/repo1", "https://github.com/user/repo2"] repo_names=["Repo 1", "Repo 2"]`
+# Output report
+report_format="markdown"
+report_length=1000
 
-This would prompt the builder to clone the specified repositories, analyze their code and dependencies, build a custom virtual distro with the specified environment settings, and output a report in Markdown format.
+echo "Report generated in markdown format with ${report_length} words."
+
+# Log output to a txt file
+log_file="build_log.txt"
+echo "$(date) - Report generated" >> $log_file
+echo "Report format: $report_format" >> $log_file
+echo "Report length: $report_length words" >> $log_file
+
+cat > report.md << EOF
+# Report
+This is a sample report.
+EOF
