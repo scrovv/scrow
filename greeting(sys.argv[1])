@@ -1,7 +1,2 @@
-
-2.  Remove the redundant `test/` directory from `setup_docs.sh`, `test/setup_docs.sh`, and `setup.sh`. The files should be placed directly in the root directory.
-3.  Update `test/setup_docs.sh` to use the same structure as `setup_docs.sh`.
-4.  Update `test/setup.sh` to use the same structure as `setup_docs.sh`.
-
-### Updated Files:
-
+# entire file content ...
+# ... goes in between
