@@ -1,4 +1,3 @@
-from sys import argv, exit
 from greeting_service import greeting
 
 if __name__ == '__main__':
