@@ -1,4 +1,0 @@
-    These logs can help identify any issues that occurred during the build process.
-*   If you encounter issues with the Playground itself, check the frontend and backend logs for errors:
-    ```bash
-kubectl logs -n playground <pod-name>
