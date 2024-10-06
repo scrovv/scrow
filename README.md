@@ -1,6 +1,9 @@
 # Top links:
 
+https://manuagi.beehiiv.com/login/c23e2083-8ade-4a93-92b7-1149e1c3dc35?login_token=sRkfJkSJk14KLQ3GuXzCZvFEUeRhLjDW&token_id=aff39531-9358-492a-aacf-5ecfd40674e8&redirect_to=https%3A%2F%2Fmanuagi.beehiiv.com%2F
+
 https://github.com/PierrunoYT/awesome-ai-dev-tools
+
 
 
 ## Getting Started
