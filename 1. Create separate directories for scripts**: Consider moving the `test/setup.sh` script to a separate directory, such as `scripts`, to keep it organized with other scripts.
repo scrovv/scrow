@@ -1,7 +1,0 @@
-ghost/
-|--- scripts/
-|    |--- setup_docs.sh
-|    |--- script.sh
-|--- docs/
-|    |--- README.md
-|--- ...

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# Run the alias command
-alias .x='aider --model ollama/llama3.2 --message make

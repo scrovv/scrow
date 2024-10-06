@@ -1,7 +1,0 @@
-# script.sh
-#!/bin/bash
-
-# Initialize documentation directory if it doesn't exist
-mkdir -p docs
-
-# ...
