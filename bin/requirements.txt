@@ -1,6 +1,0 @@
-cypress@10.9.0
-python==3.11.0
-pip==21.2.4
-nvm==0.39.1
-docker-compose==2.6.0
-pytest==7.2.5
