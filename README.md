@@ -4,7 +4,7 @@ https://manuagi.beehiiv.com/login/c23e2083-8ade-4a93-92b7-1149e1c3dc35?login_tok
 
 https://github.com/PierrunoYT/awesome-ai-dev-tools
 
-
+**PROJECT IN DEVELOPMENT**
 
 ## Getting Started
 
