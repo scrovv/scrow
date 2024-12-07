@@ -1,31 +1,62 @@
-# Top links:
+Concise Definition of a Sigma Male Personality
 
-https://manuagi.beehiiv.com/login/c23e2083-8ade-4a93-92b7-1149e1c3dc35?login_token=sRkfJkSJk14KLQ3GuXzCZvFEUeRhLjDW&token_id=aff39531-9358-492a-aacf-5ecfd40674e8&redirect_to=https%3A%2F%2Fmanuagi.beehiiv.com%2F
+A Sigma Male is a self-reliant, introspective individual who thrives outside conventional social hierarchies, embodying strength, wisdom, and purpose. Guided by the principles of Memento Mori ("Remember you must die") and As Above, So Below (unity of the macrocosm and microcosm), he masters Kairos (seizing the opportune moment) and refines himself perpetually through a Kaizen mindset (continuous improvement).
 
-https://github.com/PierrunoYT/awesome-ai-dev-tools
+Core Attributes and Codes
 
-**PROJECT IN DEVELOPMENT**
+1. Self-Awareness and Mortality Acceptance (Memento Mori)
 
-## Getting Started
+Acknowledges the transient nature of life, finding focus in what matters most.
 
-To get started with this project, run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal.
-For auto-docker setup, navigate to ./ghost/apps/auto-docker and follow the instructions.
+Embraces solitude to deepen self-knowledge and live authentically.
 
-## Building Apps
 
-To build apps, you can use the following commands:
 
-- Getting started: `cd ghost/scripts && chmod +x script.sh` `./script.sh`
-- For the main project: Run the command specified in the README.md for your specific use case (`make build` `python setup.py` `npm run`)
+2. Universal Alignment and Responsibility (As Above, So Below)
 
-## Pipelines
+Understands that his inner world shapes his outer reality.
 
-The following pipelines can be used to automate workspace execution:
+Strives for harmony between personal growth and his contributions to society.
 
-| Pipeline | Description |
-| --- | --- |
-| **e2e**: End-to-end pipeline for testing and validation | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. 5. Run `npm run` to start the application. |
-| **dev**: Development pipeline for local development | 1. Run `cd ghost/scripts && chmod +x script.sh` `./script.sh` in your terminal. 2. Navigate to ./ghost/apps/auto-docker and follow the instructions. 3. Run `make build` to build the project. 4. Run `python setup.py` to install dependencies. 5. Run `npm run` to start the application. |
-| **setup**: Setup pipeline for initial repository configuration | 1. Run `cd ghost/scripts && chmod +x setup_docs.sh` `./setup_docs.sh` in your terminal. 2. Navigate to ./ghost/docs and run `make build` to generate documentation. |
 
-**script.sh**
+
+3. Mastery of the Moment (Kairos)
+
+Cultivates acute situational awareness and timing.
+
+Acts decisively, adapting to opportunities with precision and presence.
+
+
+
+4. Relentless Growth (Kaizen Mindset)
+
+Views life as a forge, constantly refining his character, skills, and mindset.
+
+Practices humility and discipline, focusing on incremental but consistent progress.
+
+
+
+
+Sigma Male Code
+
+1. Live Authentically: Define your values and live true to them, regardless of societal expectations.
+
+
+2. Embrace the Temporary: Treat each day as both an opportunity and a farewell.
+
+
+3. Balance Inner and Outer: Recognize your thoughts, actions, and environment as interconnected.
+
+
+4. Act Decisively: Learn to identify and seize key moments for change and achievement.
+
+
+5. Evolve Constantly: Pursue mastery by breaking limits through discipline and introspection.
+
+
+
+In Practice
+
+A Sigma Male living by these principles becomes a dynamic force of resilience and insight. He navigates life not as a follower or leader within social hierarchies but as a lone pioneer, charting his path through wisdom, adaptability, and unyielding growth.
+
+
