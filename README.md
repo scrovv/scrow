@@ -1,3 +1,5 @@
+Chain of Prompts macro :
+
 === Content: Define your subject or topic. ===
 Provide your input below:  
 > The impact of AI on society.  
